@@ -10,12 +10,16 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link href="dark-mode.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
+    <link rel="stylesheet" href="asset/style.css" />
     <title>Wisata Indonesia</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-auto sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Travel Me</a>
         <button
@@ -32,12 +36,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Beranda</a
+              <a class="nav-link" aria-current="page" href="#destinasi"
+                >Destinasi Wisata</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Destinasi Wisata</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -50,10 +51,15 @@
                 Aktivitas
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Budaya</a></li>
-                <li><a class="dropdown-item" href="#">Petualangan</a></li>
-                <li><a class="dropdown-item" href="#">Alam</a></li>
+                <li><a class="dropdown-item" href="#aktivitas-1">Budaya</a></li>
+                <li>
+                  <a class="dropdown-item" href="#aktivitas-2">Petualangan</a>
+                </li>
+                <li><a class="dropdown-item" href="#aktivitas-3">Alam</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#populer">Destinasi Populer</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Rencanakan Perjalanan</a>
@@ -78,7 +84,11 @@
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="1.jpg" class="d-block w-100" alt="Slide 1" />
+          <img
+            src="asset/img/img-bg/bg top.jpg"
+            class="d-block w-100"
+            alt="Slide 1"
+          />
           <div class="carousel-caption">
             <h2>Travel Wisata</h2>
             <a href=""><p>Temukan hal baru disini!!</p></a>
@@ -87,57 +97,94 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="destinasi">
+      <h3>Destinasi Wisata</h3>
       <div class="card-container">
         <div class="img-card">
-          <img src="2.jpg" alt="" />
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Danau Toba</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Borobudur</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Mandalika</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Labuan Bajo</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Gunung Rinjani</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
           <p>Taman Nasional</p>
         </div>
         <div class="img-card">
-          <img src="3.jpg" alt="" />
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
           <p>Taman Nasional</p>
         </div>
         <div class="img-card">
-          <img src="4.jpg" alt="" />
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Taman Nasional</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+          <p>Taman Nasional</p>
+        </div>
+        <div class="img-card">
+          <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
           <p>Taman Nasional</p>
         </div>
       </div>
 
-      <div class="rekomen">
-        <div class="img-daftar">
-          <img src="5.jpg" alt="" />
-          <div class="text-rekomen">
-            <h3>March 2024</h3>
-            <p class="short-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-              similique quos inventore voluptate distinctio ipsa, architecto
-              dolor consequatur error, corporis obcaecati, vero consequuntur
-              minima quod at omnis in harum? Praesentium sit architecto adipisci
-              ipsa illo fugiat, quo est veritatis dicta omnis possimus quia odio
-              non harum iusto provident ratione debitis.
-            </p>
-            <button class="read-more-btn">Baca Selengkapnya</button>
-          </div>
-        </div>
-        <div class="img-daftar">
-          <img src="6.jpg" alt="" />
-          <div class="text-rekomen">
-            <h3>July 2024</h3>
-            <p class="short-text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus veritatis quibusdam dolore sunt. Minus explicabo
-              reiciendis mollitia autem alias assumenda similique dignissimos?
-              Sequi tempore voluptates alias eos fuga officiis delectus,
-              deserunt impedit pariatur neque provident qui. Hic harum repellat
-              tenetur consequatur dolorum, at et, beatae labore ducimus cumque
-              expedita quia.
-            </p>
-            <button class="read-more-btn">Baca Selengkapnya</button>
-          </div>
+      <div class="card my-5" id="aktivitas-1">
+        <img src="asset/img/img-bg/bg top.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
         </div>
       </div>
 
-      <div class="populer">
+      <div class="card my-5" id="aktivitas-2">
+        <img src="asset/img/img-bg/bg top.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="card my-5" id="aktivitas-3">
+        <img src="asset/img/img-bg/bg top.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="populer" id="populer">
         <h3>Destinasi Populer</h3>
         <ul>
           <a onclick="showImages('kota')"><li>Kota</li></a>
@@ -183,6 +230,52 @@
         </button>
       </div>
 
+      <div class="inspirasi">
+        <h3>Inspirasi Perjalanan</h3>
+        <div class="card-container">
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+          <div class="img-card">
+            <img src="asset/img/img-populer/Kota/2.jpg" alt="" />
+            <img src="asset/instagram.png" alt="" class="ig" />
+          </div>
+        </div>
+      </div>
+
       <div class="explore">
         <h3>Menjelajahi Indonesia</h3>
         <div class="video-container">
@@ -202,12 +295,53 @@
       </div>
     </div>
 
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="logo">
+          <h2>Travel Me</h2>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="site-links">
+          <a href="#">Kebijakan Cookie</a>
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat dan Ketentuan</a>
+          <a href="#">Hubungi Kami</a>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="disclaimer">
+        Situs ini merupakan situs resmi dari Travel Me. Semua isi yang tercantum
+        di dalam situs ini bertujuan untuk memberikan informasi dan bukan
+        sebagai tujuan komersial. Penjualan yang ditampilkan merupakan tanda
+        kemitraan yang akan menghubungkan Anda kepada mitra kami.
+      </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="main.js"></script>
+    <script src="asset/main.js"></script>
   </body>
 </html>

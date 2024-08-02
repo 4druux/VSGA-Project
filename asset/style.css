@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f0f0f;
+}
+
+body.dark-mode {
+  background-color: #212121;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar {
+  background-color: #212121;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar .btn {
+  background-color: #212121;
+  border-color: #212121;
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar .btn:hover {
+  background-color: #444;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.carousel-item img {
+  height: 95vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  height: 100%;
+}
+
+.carousel-caption h2 {
+  font-size: 5rem;
+}
+
+.carousel-caption a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  background-color: #212121;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+.carousel-caption p:hover {
+  background-color: #444;
+}
+
+/* Destinasi Pilihan & Insiprasi */
+.container {
+  padding: 1.4rem 4%;
+}
+
+.container h3 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.img-card {
+  position: relative;
+  width: 100%;
+  height: 35vh; /* Tetapkan tinggi tetap */
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.img-card:hover {
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-card .ig {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  padding: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-card p {
+  position: absolute;
+  font-weight: 600;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 15px 10px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Card Img with text */
+.card img {
+  width: 100%;
+  height: 60vh;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Populer */
+.populer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.populer h3 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.populer ul {
+  display: flex;
+  padding: 0;
+  text-align: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.populer a {
+  text-decoration: none;
+  background-color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #000;
+}
+
+.populer a.active,
+.populer a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.populer li {
+  list-style: none;
+}
+
+.image-container {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.scroll-images {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: hidden; /* Ensure no horizontal overflow */
+  scroll-behavior: smooth;
+}
+
+.scroll-images img {
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  z-index: 10; /* Pastikan z-index cukup tinggi agar tombol terlihat di atas elemen lain */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none; /* Remove default button border */
+}
+
+.scroll-button.left {
+  left: 10px;
+}
+
+.scroll-button.right {
+  right: 10px;
+}
+
+.scroll-button.hidden {
+  display: none;
+}
+
+/* eksplore */
+.explore {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.explore h3 {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.video-container iframe {
+  flex: 1 1 45%;
+  max-width: 560px;
+  height: 285px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #002244;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .logo h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer .social-icons li {
+  display: inline;
+}
+
+.footer .social-icons li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons li a:hover {
+  color: #ffcc00;
+}
+
+.footer .site-links {
+  margin-bottom: 1rem;
+}
+
+.footer .site-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer .site-links a:hover {
+  color: #ffcc00;
+}
+
+.footer .disclaimer {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
