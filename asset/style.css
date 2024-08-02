@@ -3,6 +3,7 @@
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  background-color: #efefef;
 }
 
 ::-webkit-scrollbar {
@@ -106,18 +107,18 @@ body.dark-mode {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   border-radius: 10px;
-}
-
-.img-card:hover {
-  transform: scale(1.05);
-  transition: 0.5s ease-in-out;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
 .img-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.7s ease-out;
+}
+
+.img-card:hover img {
+  transform: scale(1.2);
 }
 
 .img-card .ig {
@@ -146,6 +147,13 @@ body.dark-mode {
 }
 
 /* Card Img with text */
+.card {
+  border: none;
+  display: flex;
+  padding-top: 5rem;
+  background-color: #efefef;
+}
+
 .card img {
   width: 100%;
   height: 60vh;
@@ -155,6 +163,12 @@ body.dark-mode {
   width: 100%;
   height: 100%;
   border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
 }
 
 /* Populer */
@@ -187,6 +201,16 @@ body.dark-mode {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
+  color: #000;
+}
+
+.dark-mode .populer a {
+  background-color: #444;
+  color: #e0e0e0;
+}
+
+.dark-mode .populer a:hover {
+  background-color: #e0e0e0;
   color: #000;
 }
 
@@ -282,11 +306,13 @@ body.dark-mode {
 
 /* Footer */
 .footer {
-  background-color: #002244;
-  color: #ffffff;
   padding: 2rem;
   text-align: center;
   font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+}
+
+.dark-mode .footer {
 }
 
 .footer .logo {
@@ -298,6 +324,7 @@ body.dark-mode {
 
 .footer .logo h2 {
   font-size: 3rem;
+  color: #e0e0e0;
   margin-bottom: 1rem;
   font-weight: 800;
   letter-spacing: 0.2rem;
@@ -323,7 +350,7 @@ body.dark-mode {
 }
 
 .footer .social-icons li a {
-  color: #ffffff;
+  color: #e0e0e0;
   text-decoration: none;
   font-size: 1.5rem;
   transition: color 0.3s ease;
@@ -338,7 +365,7 @@ body.dark-mode {
 }
 
 .footer .site-links a {
-  color: #ffffff;
+  color: #e0e0e0;
   text-decoration: none;
   margin: 0 1rem;
   transition: color 0.3s ease;
@@ -348,9 +375,15 @@ body.dark-mode {
   color: #ffcc00;
 }
 
+hr{
+  border: 1px solid #e0e0e0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .footer .disclaimer {
   font-size: 0.9rem;
-  color: #cccccc;
+  color: #e0e0e0;
 }
 
 /* Media Queries */
