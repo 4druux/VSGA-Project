@@ -154,6 +154,10 @@ body.dark-mode {
   background-color: #efefef;
 }
 
+.dark-mode .card {
+  background-color: #212121;
+}
+
 .card img {
   width: 100%;
   height: 60vh;
