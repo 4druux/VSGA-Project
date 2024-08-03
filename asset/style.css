@@ -30,23 +30,6 @@ body.dark-mode {
   color: #e0e0e0;
 }
 
-.dark-mode .navbar {
-  background-color: #212121;
-  color: #e0e0e0;
-}
-
-.dark-mode .navbar .btn {
-  background-color: #212121;
-  border-color: #212121;
-  color: #e0e0e0;
-}
-
-.dark-mode .navbar .btn:hover {
-  background-color: #444;
-  border-color: #444;
-  color: #e0e0e0;
-}
-
 .carousel-item img {
   height: 95vh;
   object-fit: cover;
@@ -150,12 +133,8 @@ body.dark-mode {
 .card {
   border: none;
   display: flex;
-  padding-top: 5rem;
-  background-color: #efefef;
-}
-
-.dark-mode .card {
-  background-color: #212121;
+  margin-top: 5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card img {
@@ -173,6 +152,11 @@ body.dark-mode {
 .card-body {
   background-color: #fff;
   border-radius: 0 0 5px 5px;
+}
+
+.dark-mode .card-body {
+  background-color: #444;
+  color: #fff;
 }
 
 /* Populer */
@@ -316,9 +300,6 @@ body.dark-mode {
   background-color: #1a1a1a;
 }
 
-.dark-mode .footer {
-}
-
 .footer .logo {
   display: flex;
   justify-content: center;
@@ -379,7 +360,7 @@ body.dark-mode {
   color: #ffcc00;
 }
 
-hr{
+hr {
   border: 1px solid #e0e0e0;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -403,7 +384,30 @@ hr{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 778px) {
+  .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }

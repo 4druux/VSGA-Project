@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarHeight = document.querySelector('.navbar').offsetHeight;
+  const links = document.querySelectorAll('a[href^="#"]');
+  const additionalOffset = 10; // Nilai offset negatif, sesuaikan sesuai kebutuhan
+
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const elementPosition = targetElement.getBoundingClientRect().top;
+        let offsetPosition;
+
+        if (targetId.startsWith('aktivitas')) {
+          offsetPosition = window.scrollY + elementPosition - navbarHeight - additionalOffset;
+        } else {
+          offsetPosition = window.scrollY + elementPosition - additionalOffset; // Adjust position for other sections
+        }
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("darkModeToggle")
